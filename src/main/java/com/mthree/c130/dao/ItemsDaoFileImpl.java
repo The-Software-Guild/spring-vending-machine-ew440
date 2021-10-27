@@ -1,12 +1,10 @@
 package com.mthree.c130.dao;
 
 import com.mthree.c130.dto.Item;
-import org.springframework.stereotype.Component;
 
 import java.io.*;
 import java.util.*;
 
-@Component
 public class ItemsDaoFileImpl implements ItemsDao {
 
     public final String ITEMS_FILE;

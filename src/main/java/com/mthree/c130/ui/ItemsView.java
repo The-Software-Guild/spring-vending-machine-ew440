@@ -1,17 +1,13 @@
 package com.mthree.c130.ui;
 
 import com.mthree.c130.dto.Item;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component
 public class ItemsView {
 
     private UserIO io;
 
-    @Autowired
     public ItemsView(UserIO io) {
         this.io = io;
     }

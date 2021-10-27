@@ -5,19 +5,14 @@ import com.mthree.c130.dao.ItemFilePersistenceException;
 import com.mthree.c130.dao.ItemsDao;
 import com.mthree.c130.dto.CoinEnums;
 import com.mthree.c130.dto.Item;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
 public class ItemsServiceLayerImpl implements ItemsServiceLayer {
 
     private ItemAuditDao auditDao;
     ItemsDao dao;
 
-    @Autowired
     public ItemsServiceLayerImpl(ItemsDao dao, ItemAuditDao auditDao) {
         this.auditDao = auditDao;
         this.dao = dao;

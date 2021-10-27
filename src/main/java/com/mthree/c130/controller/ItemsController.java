@@ -7,21 +7,17 @@ import com.mthree.c130.service.InsufficientFundsException;
 import com.mthree.c130.service.ItemsServiceLayer;
 import com.mthree.c130.service.Total;
 import com.mthree.c130.ui.ItemsView;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Component
 public class ItemsController {
 
     private ItemsView view;
     private ItemsServiceLayer service;
 
-    @Autowired
     public ItemsController(ItemsServiceLayer service, ItemsView view) {
         this.service = service;
         this.view = view;
